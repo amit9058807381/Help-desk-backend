@@ -9,7 +9,10 @@ import reactor.core.publisher.Flux;
 @RestController
 @RequestMapping("/api/v1/helpdesk")
 @RequiredArgsConstructor
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://help-desk-frontend-sand.vercel.app"
+})
 public class AiController {
 
 
